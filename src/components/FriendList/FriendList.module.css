@@ -1,0 +1,50 @@
+.friends-container {
+    width: 600px;
+    margin: 100px auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.friendAvatar {
+    width: 100px;
+}
+
+.friendName {
+    padding-top: 12px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.friendStatus {
+    font-size: 18px;
+}
+
+.online {
+    composes: friendStatus;
+    color: green;
+}
+
+.offline {
+    composes: friendStatus;
+    color: red;
+}
+
+.friendsList {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    margin-bottom: 40px;
+}
+
+.friendsListItem {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+}
